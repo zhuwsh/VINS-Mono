@@ -1,0 +1,11 @@
+
+roslaunch vins_estimator euroc.launch 或者roslaunch vins_estimator euroc_no_extrinsic_param.launch
+roslaunch vins_estimator vins_rviz.launch
+
+rosbag play /home/zhuwsh/Desktop/SLAM/dataset/MH_04_difficult.bag
+或者使用本项目中的数据集
+rosbag play dataset/MH_04_difficult.bag
+
+1.cv::calcOpticalFlowPyrLK
+2.cv::goodFeaturesToTrack
+
